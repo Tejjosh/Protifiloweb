@@ -102,8 +102,6 @@
   }
 </style>
 
-
-
 </head>
 <body class="font-sans bg-[#e6f0f1] text-[#003f47]">
 <?php
@@ -518,7 +516,7 @@ function toggleExperience(index) {
 
    
 <!-- Footer -->
-<footer class="bg-[#dad7cd] text-white text-center py-6 mt-10">
+<footer class="bg-[#2C3930] text-white text-center py-6 ">
   <p>&copy; <?php echo date("Y"); ?> <?php echo $personal_info['name']; ?>. All rights reserved.</p>
 </footer>
 
