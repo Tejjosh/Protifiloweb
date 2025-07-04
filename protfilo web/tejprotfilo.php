@@ -105,28 +105,32 @@ $experiences = [
     'location' => 'Vadodara',
     'position' => 'Front End Development Intern',
     'duration' => 'May 2025 - Jun 2025',
-    'description' => 'Developed responsive full-stack eCommerce platforms using PHP, MySQL, HTML, CSS, and JavaScript. Implemented secure user authentication, session handling, and profile management to enhance customer experience and data safety. Collaborated in an agile team environment delivering high-performance web applications. Performed cross-browser testing, UI optimization, and code refactoring to ensure responsive, scalable solutions. Contributed to debugging, performance tuning, and code reviews for continuous improvement.'
+    'description' => 'Developed responsive full-stack eCommerce platforms using PHP, MySQL, HTML, CSS, and JavaScript. Implemented secure user authentication, session handling, and profile management to enhance customer experience and data safety. Collaborated in an agile team environment delivering high-performance web applications. Performed cross-browser testing, UI optimization, and code refactoring to ensure responsive, scalable solutions. Contributed to debugging, performance tuning, and code reviews for continuous improvement.',
+    'certificate' => 'f:\protfilo web\certificatesspider_web_solutions.pdf'
   ],
   [
     'company' => 'Spaculus Software',
     'location' => 'Vadodara',
     'position' => 'Web Developer Intern',
     'duration' => 'May 2025 - Jun 2025',
-    'description' => 'Engineered a time tracking software with real-time session logging and idle detection using Python and MySQL. Designed and implemented admin dashboards for time analytics, project-wise tracking, and reporting. Ensured database optimization and backend security through efficient Python ORM queries and MySQL configurations. Collaborated with frontend teams to achieve seamless UI/backend integration and conducted performance testing.'
+    'description' => 'Engineered a time tracking software with real-time session logging and idle detection using Python and MySQL. Designed and implemented admin dashboards for time analytics, project-wise tracking, and reporting. Ensured database optimization and backend security through efficient Python ORM queries and MySQL configurations. Collaborated with frontend teams to achieve seamless UI/backend integration and conducted performance testing.',
+    'certificate' => 'cf:\protfilo web\Scanned 4 Jul 2025 at 12_47_10 PM.pdf'
   ],
   [
     'company' => 'Ksithub',
     'location' => 'Surat',
     'position' => 'Frontend Developer Intern',
     'duration' => 'Apr 2025 - May 2025',
-    'description' => 'Contributed to frontend stability, code quality, and UI consistency across multiple projects. Fixed critical bugs and improved component efficiency to enhance user experience. Actively engaged in cross-functional team discussions to align frontend goals with backend processes. Demonstrated excellent version control practices using Git and GitHub.'
+    'description' => 'Contributed to frontend stability, code quality, and UI consistency across multiple projects. Fixed critical bugs and improved component efficiency to enhance user experience. Actively engaged in cross-functional team discussions to align frontend goals with backend processes. Demonstrated excellent version control practices using Git and GitHub.',
+    'certificate' => 'f:\protfilo web\TejjoshiinternshipKISITHUB.pdf'
   ],
   [
     'company' => 'Growthclues',
     'location' => 'Virtual',
     'position' => 'Stock Market Management Intern',
     'duration' => 'Dec 2023 - Jan 2024',
-    'description' => 'Conducted detailed stock market research and technical analysis across various industry sectors. Prepared investment reports, risk assessments, and portfolio strategies based on real-time market data. Utilized financial tools and historical datasets to identify profitable investment opportunities and trends. Developed data-driven decision-making skills and gained exposure to stock market operations and investment planning.'
+    'description' => 'Conducted detailed stock market research and technical analysis across various industry sectors. Prepared investment reports, risk assessments, and portfolio strategies based on real-time market data. Utilized financial tools and historical datasets to identify profitable investment opportunities and trends. Developed data-driven decision-making skills and gained exposure to stock market operations and investment planning.',
+    'certificate' => 'f:\protfilo web\Tej_Joshi_Hired_Certificate.pdf'
   ]
 ];
 
@@ -288,30 +292,43 @@ $contact_info = [
         </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="py-16 bg-white">
-        <div class="container mx-auto px-6">
-            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">About Me</h2>
-            
-            <div class="flex flex-col md:flex-row">
-                <div class="md:w-1/2 mb-10 md:mb-0">
-                    <h3 class="text-2xl font-semibold mb-6 text-gray-700">Personal Info</h3>
-                    <div class="space-y-4">
-                        <?php foreach ($contact_info as $item): ?>
+<!-- About Section -->
+<section id="about" class="py-16 bg-white">
+    <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">About Me</h2>
+
+        <div class="flex flex-col md:flex-row">
+            <!-- Personal Info -->
+            <div class="md:w-1/2 mb-10 md:mb-0">
+                <h3 class="text-2xl font-semibold mb-6 text-gray-700">Personal Info</h3>
+                <div class="space-y-4">
+                    <?php foreach ($contact_info as $item): ?>
+                        <?php
+                            $brandIcons = ['github', 'linkedin'];
+                            $isBrand = in_array($item['icon'], $brandIcons);
+                            $iconClass = $isBrand ? 'fab' : 'fas';
+                        ?>
                         <div class="flex items-start">
                             <div class="mr-4 mt-1 text-blue-600 w-6 flex justify-center">
-                                <i class="fas fa-<?php echo $item['icon']; ?>"></i>
+                                <i class="<?php echo $iconClass; ?> fa-<?php echo $item['icon']; ?>"></i>
                             </div>
                             <div>
-                                <p class="text-gray-800"><?php echo $item['text']; ?></p>
+                                <?php if ($isBrand): ?>
+                                    <a href="<?php echo $item['text']; ?>" target="_blank" class="text-gray-800 hover:text-blue-600">
+                                        <?php echo ucfirst($item['icon']); ?>
+                                    </a>
+                                <?php else: ?>
+                                    <p class="text-gray-800"><?php echo $item['text']; ?></p>
+                                <?php endif; ?>
                             </div>
                         </div>
-                        <?php endforeach; ?>
-                    </div>
-                    
-                    <h3 class="text-2xl font-semibold mt-12 mb-6 text-gray-700">Education</h3>
-                    <div class="space-y-6">
-                        <?php foreach ($education as $edu): ?>
+                    <?php endforeach; ?>
+                </div>
+
+                <!-- Education -->
+                <h3 class="text-2xl font-semibold mt-12 mb-6 text-gray-700">Education</h3>
+                <div class="space-y-6">
+                    <?php foreach ($education as $edu): ?>
                         <div class="bg-gray-50 p-5 rounded-lg shadow-sm">
                             <h4 class="text-lg font-semibold text-gray-800"><?php echo $edu['degree']; ?></h4>
                             <div class="flex items-center text-gray-600 mt-1">
@@ -323,17 +340,18 @@ $contact_info = [
                                 <span><?php echo $edu['duration']; ?></span>
                             </div>
                         </div>
-                        <?php endforeach; ?>
-                    </div>
-
+                    <?php endforeach; ?>
                 </div>
-             
-                <div class="md:w-1/2 md:pl-12">
-                    <h3 class="text-2xl font-semibold mb-6 text-gray-700">Professional Summary</h3>
-                    <p class="text-gray-700 leading-relaxed mb-6"><?php echo $personal_info['objective']; ?></p>
-                   <h3 class="text-2xl font-semibound mt-12 mb-6 text-gray-700">Certifications</h3>
-                    <div class="space-y-4">
-                        <?php foreach ($certifications as $cert): ?>
+            </div>
+
+            <!-- Professional Summary & Certifications -->
+            <div class="md:w-1/2 md:pl-12">
+                <h3 class="text-2xl font-semibold mb-6 text-gray-700">Professional Summary</h3>
+                <p class="text-gray-700 leading-relaxed mb-6"><?php echo $personal_info['objective']; ?></p>
+
+                <h3 class="text-2xl font-semibold mt-12 mb-6 text-gray-700">Certifications</h3>
+                <div class="space-y-4">
+                    <?php foreach ($certifications as $cert): ?>
                         <div class="border-l-4 border-blue-500 pl-4">
                             <h4 class="font-semibold text-gray-800"><?php echo $cert['title']; ?></h4>
                             <div class="flex flex-wrap items-center text-gray-600 text-sm mt-1">
@@ -343,12 +361,14 @@ $contact_info = [
                             </div>
                             <p class="text-gray-700 mt-2 text-sm"><?php echo $cert['description']; ?></p>
                         </div>
-                        <?php endforeach; ?>
-                    </div>    
+                    <?php endforeach; ?>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
-                </section>
-
-                <!-- Work Experience Section -->
+        <!-- Work Experience Section -->
 <section id="experience" class="py-16 bg-gray-50">
   <div class="container mx-auto px-6">
     <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Work Experience</h2>
@@ -382,6 +402,16 @@ $contact_info = [
           <div id="exp-desc-<?php echo $index; ?>" class="mt-4 text-gray-700 text-sm hidden transition duration-300">
             <?php echo $exp['description']; ?>
           </div>
+
+          <!-- Download Certificate Button -->
+          <?php if (!empty($exp['certificate'])): ?>
+            <div class="mt-4">
+              <a href="<?php echo $exp['certificate']; ?>" download target="_blank"
+                class="inline-block bg-[#A27B5C] text-white px-4 py-2 rounded hover:bg-[#8a664a] transition">
+                Download Certificate
+              </a>
+            </div>
+          <?php endif; ?>
         </div>
       <?php endforeach; ?>
     </div>
@@ -478,7 +508,7 @@ function toggleExperience(index) {
 
    
 <!-- Footer -->
-<footer class="bg-[#dad7cd] text-white text-center py-6">
+<footer class="bg-[#A27B5C] text-white text-center py-6">
   <p>&copy; <?php echo date("Y"); ?> <?php echo $personal_info['name']; ?>. All rights reserved.</p>
 </footer>
 
