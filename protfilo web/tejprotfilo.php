@@ -93,7 +93,7 @@
 <?php
 $personal_info = [
   'name' => 'Tej Joshi',
-  'email' => '26128tejjoshi@gmail.com',
+  'email' => '2303466160445@paruluniversity.ac.in',
   'phone' => '+91 8401907776',
   'location' => 'Vadodara',
   'objective' => 'Seeking a challenging role in Computer Engineering to apply and grow skills in programming, networking, and emerging technologies while contributing to organizational success and continuous learning.'
@@ -105,32 +105,32 @@ $experiences = [
     'location' => 'Vadodara',
     'position' => 'Front End Development Intern',
     'duration' => 'May 2025 - Jun 2025',
-    'description' => 'Developed responsive full-stack eCommerce platforms using PHP, MySQL, HTML, CSS, and JavaScript. Implemented secure user authentication, session handling, and profile management to enhance customer experience and data safety. Collaborated in an agile team environment delivering high-performance web applications. Performed cross-browser testing, UI optimization, and code refactoring to ensure responsive, scalable solutions. Contributed to debugging, performance tuning, and code reviews for continuous improvement.',
-    'certificate' => 'f:\protfilo web\certificatesspider_web_solutions.pdf'
+    'description' => 'Developed responsive, full-stack eCommerce platforms using PHP, MySQL, HTML, CSS, and JavaScript. Implemented secure user authentication, session handling, and profile management. Collaborated in an agile environment. Performed UI optimization and code refactoring. Contributed to debugging and performance tuning.',
+    'certificate' => 'f:\\portfolio_web\\certificatesspider_web_solutions.pdf'
   ],
   [
     'company' => 'Spaculus Software',
     'location' => 'Vadodara',
     'position' => 'Web Developer Intern',
     'duration' => 'May 2025 - Jun 2025',
-    'description' => 'Engineered a time tracking software with real-time session logging and idle detection using Python and MySQL. Designed and implemented admin dashboards for time analytics, project-wise tracking, and reporting. Ensured database optimization and backend security through efficient Python ORM queries and MySQL configurations. Collaborated with frontend teams to achieve seamless UI/backend integration and conducted performance testing.',
-    'certificate' => 'cf:\protfilo web\Scanned 4 Jul 2025 at 12_47_10 PM.pdf'
+    'description' => 'Engineered a time tracking solution with real-time session logging and idle detection using Python and MySQL. Designed dashboards for analytics and reporting. Ensured backend optimization and security. Collaborated on UI/backend integration and conducted performance testing.',
+    'certificate' => 'f:\\portfolio_web\\Scanned_Spaculus_Certificate.pdf'
   ],
   [
     'company' => 'Ksithub',
     'location' => 'Surat',
     'position' => 'Frontend Developer Intern',
     'duration' => 'Apr 2025 - May 2025',
-    'description' => 'Contributed to frontend stability, code quality, and UI consistency across multiple projects. Fixed critical bugs and improved component efficiency to enhance user experience. Actively engaged in cross-functional team discussions to align frontend goals with backend processes. Demonstrated excellent version control practices using Git and GitHub.',
-    'certificate' => 'f:\protfilo web\TejjoshiinternshipKISITHUB.pdf'
+    'description' => 'Contributed to frontend stability, code quality, and UI consistency. Fixed bugs and enhanced components. Participated in team discussions. Practiced Git and GitHub for version control.',
+    'certificate' => 'f:\\portfolio_web\\TejjoshiinternshipKISITHUB.pdf'
   ],
   [
     'company' => 'Growthclues',
     'location' => 'Virtual',
     'position' => 'Stock Market Management Intern',
     'duration' => 'Dec 2023 - Jan 2024',
-    'description' => 'Conducted detailed stock market research and technical analysis across various industry sectors. Prepared investment reports, risk assessments, and portfolio strategies based on real-time market data. Utilized financial tools and historical datasets to identify profitable investment opportunities and trends. Developed data-driven decision-making skills and gained exposure to stock market operations and investment planning.',
-    'certificate' => 'f:\protfilo web\Tej_Joshi_Hired_Certificate.pdf'
+    'description' => 'Conducted stock market research and analysis. Prepared investment reports and risk assessments. Utilized financial tools and historical data. Developed data-driven decision-making skills.',
+    'certificate' => 'f:\\portfolio_web\\Tej_Joshi_Hired_Certificate.pdf'
   ]
 ];
 
@@ -149,31 +149,54 @@ $education = [
 
 $certifications = [
   [
+    'title' => 'Python Certification Course',
+    'issuer' => 'Imellipaat, Virtual',
+    'date' => 'Jun 2025',
+    'description' => ''
+  ],
+  [
+    'title' => 'Python For Data Science Free Course',
+    'issuer' => 'Imellipaat, Virtual',
+    'date' => 'Jun 2025',
+    'description' => ''
+  ],
+  [
+    'title' => 'AI and Data Science',
+    'issuer' => 'DRISHTI CPS IIT Indore, Virtual',
+    'date' => 'Jun 2025 - Present',
+    'description' => ''
+  ],
+  [
+    'title' => 'SQL Course',
+    'issuer' => 'Intellipaat, Virtual',
+    'date' => 'Jun 2025 - Jul 2025',
+    'description' => 'Comprehensive training in SQL, including database management, query writing, and data analysis.'
+  ],
+  [
     'title' => 'Python Using AI Workshop',
     'issuer' => 'AI For Techies, Virtual',
     'date' => 'Jun 2025',
-    'description' => 'Learned to create interactive visualizations in Python, debug Python code efficiently using AI, and write Python code with AI assistance.'
+    'description' => 'Learned to create interactive visualizations, debug and write Python code using AI.'
   ],
   [
     'title' => 'Tata Cybersecurity Security Analyst Job Simulation',
     'issuer' => 'Forage, Virtual',
     'date' => 'May 2025',
-    'description' => 'Completed a real-world cybersecurity job simulation focused on Identity and Access Management (IAM) for Tata Consultancy Services. Gained exposure to cybersecurity consulting, access control strategies, and security frameworks.'
+    'description' => 'Simulated real-world cybersecurity role focusing on IAM. Gained knowledge in consulting, access control, and frameworks.'
   ],
   [
     'title' => 'Operating System – Networking Focus',
     'issuer' => 'Networking Academy, Virtual',
     'date' => 'Oct 2024',
-    'description' => 'Studied how modern operating systems manage network communications and system-level configurations. Gained practical knowledge in computer networking and security protocols.'
+    'description' => 'Studied OS-level networking, system configuration, and protocols.'
   ],
   [
     'title' => 'Data Analytics',
     'issuer' => 'Natacad, Virtual',
     'date' => 'Mar 2024',
-    'description' => 'Completed a 20-day intensive data analytics course focused on data cleaning, visualization, and basic statistical analysis using Python and Excel.'
+    'description' => '20-day course focused on data cleaning, visualization, and statistics using Python and Excel.'
   ]
 ];
-
 $projects = [
   [
     'title' => 'Tej Joshi – Personal Portfolio Website',
@@ -291,14 +314,13 @@ $contact_info = [
             </div>
         </div>
     </section>
-
 <!-- About Section -->
 <section id="about" class="py-16 bg-white">
     <div class="container mx-auto px-6">
         <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">About Me</h2>
 
         <div class="flex flex-col md:flex-row">
-            <!-- Personal Info -->
+            <!-- Personal Info & Education -->
             <div class="md:w-1/2 mb-10 md:mb-0">
                 <h3 class="text-2xl font-semibold mb-6 text-gray-700">Personal Info</h3>
                 <div class="space-y-4">
@@ -347,26 +369,28 @@ $contact_info = [
             <!-- Professional Summary & Certifications -->
             <div class="md:w-1/2 md:pl-12">
                 <h3 class="text-2xl font-semibold mb-6 text-gray-700">Professional Summary</h3>
-                <p class="text-gray-700 leading-relaxed mb-6"><?php echo $personal_info['objective']; ?></p>
-
-                <h3 class="text-2xl font-semibold mt-12 mb-6 text-gray-700">Certifications</h3>
-                <div class="space-y-4">
-                    <?php foreach ($certifications as $cert): ?>
-                        <div class="border-l-4 border-blue-500 pl-4">
-                            <h4 class="font-semibold text-gray-800"><?php echo $cert['title']; ?></h4>
-                            <div class="flex flex-wrap items-center text-gray-600 text-sm mt-1">
-                                <span><?php echo $cert['issuer']; ?></span>
-                                <span class="mx-2">•</span>
-                                <span><?php echo $cert['date']; ?></span>
-                            </div>
-                            <p class="text-gray-700 mt-2 text-sm"><?php echo $cert['description']; ?></p>
-                        </div>
-                    <?php endforeach; ?>
-                </div>
+                <p class="text-gray-700 leading-relaxed mb-10"><?php echo $personal_info['objective']; ?></p>
             </div>
         </div>
-    </div>
+
+    </div><h3 class="text-2xl font-semibold mb-6 text-gray-700 px-6">Certifications</h3>
+<!-- Added horizontal padding wrapper -->
+  <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 px-6">
+      <?php foreach ($certifications as $cert): ?>
+          <div class="border-l-4 border-blue-500 pl-4">
+              <h4 class="font-semibold text-gray-800"><?php echo $cert['title']; ?></h4>
+              <div class="flex flex-wrap items-center text-gray-600 text-sm mt-1">
+                  <span><?php echo $cert['issuer']; ?></span>
+                  <span class="mx-2">•</span>
+                  <span><?php echo $cert['date']; ?></span>
+              </div>
+              <p class="text-gray-700 mt-2 text-sm"><?php echo $cert['description']; ?></p>
+          </div>
+      <?php endforeach; ?>
+</div>
+
 </section>
+
 
         <!-- Work Experience Section -->
 <section id="experience" class="py-16 bg-gray-50">
