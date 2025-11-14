@@ -38,7 +38,7 @@
 <?php
 $personal_info = [
   'name' => 'Tej Joshi',
-  'email' => '2303466160445@paruluniversity.ac.in',
+  'email' => '26128tejjoshi@gmail.com',
   'phone' => '+91 8401907776',
   'location' => 'Vadodara',
   'objective' => 'Motivated Computer Engineering student with a passion for problem-solving and innovative technology. Seeking opportunities to apply expertise in programming, networking, and system design to deliver impactful solutions, pursue professional growth, and contribute to organizational success.'
@@ -556,3 +556,4 @@ toggleBtn.addEventListener('click', () => {
 </script>
 </body>
 </html>
+
