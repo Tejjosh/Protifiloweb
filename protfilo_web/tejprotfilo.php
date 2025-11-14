@@ -157,46 +157,51 @@ $projects = [
   [
     'title' => 'Tej Joshi – Personal Portfolio Website',
     'duration' => 'Jun 2025 - Jul 2025',
-    'description' => 'Launched an interactive, mobile-first personal portfolio site to feature my work and skills. Utilized PHP, HTML, Tailwind CSS, and JavaScript for a clean, dynamic user experience, with real-time project galleries, testimonials, and secure contact forms.',
+    'description' => 'Launched a mobile-first portfolio site using PHP, HTML, Tailwind CSS, and JavaScript. Features real-time project galleries, testimonials, and secure contact, presenting skills and work with clean UI.',
     'link' => 'https://github.com/Tejjosh/Protifiloweb'
   ],
   [
     'title' => 'Animz Max – Anime-Inspired Clothing Brand',
-    'duration' => 'May 2025 - Jun 2025',
-    'description' => 'Built an eCommerce platform for an anime fashion brand with product filtering, user authentication, shopping cart, and secure checkout. Focused on responsive design, admin dashboards, and real-time notifications for seamless user experience.',
+    'duration' => 'May 2025 - Present',
+    'description' => 'Developed an eCommerce site for an anime fashion brand with responsive Tailwind CSS, custom filtering, secure authentication, admin dashboards, and real-time updates for a seamless user experience.',
     'link' => 'https://github.com/Tejjosh/Animz-max'
   ],
   [
     'title' => 'TockWise Time Tracker Software',
     'duration' => 'May 2025 - Jun 2025',
-    'description' => 'Engineered a desktop time tracking application in Python with real-time session management, idle detection, and analytic reporting dashboard. Emphasized UX and database security, ensuring cross-platform compatibility and robust data handling.',
+    'description' => 'Created a cross-platform desktop time tracker in Python, featuring session management, idle detection, analytics dashboard, and secure data handling for productivity insights.',
     'link' => 'https://github.com/Tejjosh/Tock_Wise'
   ],
   [
     'title' => 'Hydrox – Smart Water Irrigation System',
     'duration' => 'Dec 2024 - Jan 2025',
-    'description' => 'Developed an IoT-driven irrigation solution with Bluetooth automation, real-time moisture monitoring, and a Python Flask dashboard for scheduling and analytics. Improved water management for enhanced agricultural productivity.',
+    'description' => 'Built an IoT-driven irrigation system with Bluetooth automation, real-time moisture monitoring, and Python Flask dashboard for analytics and scheduling to optimize water use in agriculture.',
     'link' => 'https://github.com/Tejjosh/Hydrox'
   ],
   [
     'title' => 'Vidyut – Blockchain-Based Data Management System',
-    'duration' => 'Sep 2024 - Oct 2024',
-    'description' => 'Created a secure data management platform utilizing Ethereum smart contracts and React UI. Provided data integrity, transparent audit trails, and tamper-proof storage for sensitive digital assets.',
+    'duration' => 'Sep 2024 - Nov 2024',
+    'description' => 'Developed a data platform using Ethereum smart contracts and React UI, ensuring data integrity, transparent audits, and tamper-proof storage for sensitive assets.',
     'link' => 'https://github.com/Tejjosh/vidyut'
+  ],
+  [
+    'title' => 'Royal Threads – Aesthetic Professional Clothing Brand',
+    'duration' => 'Oct 2025 - Present',
+    'description' => 'Founded a professional clothing brand with a modern aesthetic, offering collections that blend classic and contemporary styles, high-quality materials, and a refined online brand identity.',
+    'link' => 'https://github.com/Tejjosh/Royal-Threads'
   ]
 ];
-
 $skills = [
   'Programming Languages' => [
-    'C', 
-    'C++', 
-    'Java', 
-    'JavaScript', 
+    'C',
+    'C++',
+    'Java',
+    'JavaScript',
     'Python'
   ],
   'Web Technologies' => [
-    'HTML5', 
-    'CSS', 
+    'HTML5',
+    'CSS',
     'PHP',
     'Tailwind CSS',
     'JavaScript',
@@ -234,14 +239,27 @@ $skills = [
     'IoT',
     'Data Science',
     'Computer Networks',
-    'Data Engineering'
+    'Data Engineering',
+    'Cloud Computing',
+    'Cybersecurity',
+    'Machine Learning',
+    'Operating Systems'
+  ],
+  'Languages' => [
+    'English (Fluent)',
+    'Hindi (Fluent)',
+    'Gujarati (Fluent)',
+    'Japanese (Beginner)'
   ],
   'Soft Skills' => [
     'Adaptability',
-    'English Proficiency (Spoken)',
-    'Gujarati Proficiency (Spoken)',
-    'Hindi Proficiency (Spoken)'
-  ]
+    'Collaboration',
+    'Teamwork',
+    'Leadership',
+    'Problem-Solving',
+    'Critical Thinking',
+    'Communication'
+    ]
 ];
 
 $contact_info = [
@@ -259,15 +277,15 @@ $contact_info = [
     <div class="flex items-center justify-between">
       <div>
         <h1 class="text-3xl font-bold"><?php echo $personal_info['name']; ?></h1>
-        <p class="text-accent">Computer Science Engineer</p>
+        <p class="text-white">Computer Science Engineer</p>
       </div>
       <nav class="hidden md:block">
         <ul class="flex space-x-8">
-          <li><a href="#about" class="hover:text-accent transition">About</a></li>
-          <li><a href="#skills" class="hover:text-accent transition">Skills</a></li>
-          <li><a href="#projects" class="hover:text-accent transition">Projects</a></li>
-          <li><a href="#experience" class="hover:text-accent transition">Experience</a></li>
-          <li><a href="#contact" class="hover:text-accent transition">Contact</a></li>
+          <li><a href="#about" class="text-2xl hover:text-orange transition">About</a></li>
+          <li><a href="#skills" class="text-2xl hover:text-orange transition">Skills</a></li>
+          <li><a href="#projects" class="text-2xl hover:text-orange transition">Projects</a></li>
+          <li><a href="#experience" class="text-2xl hover:text-orange transition">Experience</a></li>
+          <li><a href="#contact" class="text-2xl hover:text-orange transition">Contact</a></li>
         </ul>
       </nav>
       <button class="md:hidden focus:outline-none" id="menu-toggle">
@@ -279,11 +297,11 @@ $contact_info = [
   <div class="md:hidden hidden bg-primary" id="mobile-menu">
     <div class="container mx-auto px-6 py-2">
       <ul class="space-y-2">
-        <li><a href="#about" class="block py-2 hover:text-accent transition">About</a></li>
-        <li><a href="#skills" class="block py-2 hover:text-accent transition">Skills</a></li>
-        <li><a href="#projects" class="block py-2 hover:text-accent transition">Projects</a></li>
-        <li><a href="#contact" class="block py-2 hover:text-accent transition">Contact</a></li>
-        <li><a href="#experience" class="block py-2 hover:text-accent transition">Experience</a></li>
+        <li><a href="#about" class="block py-2 hover:text-orange transition">About</a></li>
+        <li><a href="#skills" class="block py-2 hover:text-orange transition">Skills</a></li>
+        <li><a href="#projects" class="block py-2 hover:text-orange transition">Projects</a></li>
+        <li><a href="#contact" class="block py-2 hover:text-orange transition">Contact</a></li>
+        <li><a href="#experience" class="block py-2 hover:text-orange transition">Experience</a></li>
       </ul>
     </div>
   </div>
@@ -324,7 +342,7 @@ $contact_info = [
 
       <!-- Personal Info & Education -->
       <div class="md:w-1/2 mb-10 md:mb-0">
-        <h3 class="text-2xl font-semibold mb-6 text-accent">Personal Info</h3>
+        <h3 class="text-2xl font-semibold mb-6 text-primary">Personal Info</h3>
         <div class="space-y-4">
           <?php foreach ($contact_info as $item): ?>
             <?php
@@ -350,16 +368,16 @@ $contact_info = [
         </div>
         
         <!-- Education -->
-        <h3 class="text-2xl font-semibold mt-12 mb-6 text-accent">Education</h3>
+        <h3 class="text-2xl font-semibold mt-12 mb-6 text-primary">Education</h3>
         <div class="space-y-6">
           <?php foreach ($education as $edu): ?>
             <div class="bg-neutral p-5 rounded-lg shadow-sm">
               <h4 class="text-lg font-semibold text-base"><?php echo $edu['degree']; ?></h4>
-              <div class="flex items-center text-accent mt-1">
+              <div class="flex items-center text-primary mt-1">
                 <i class="fas fa-university mr-2"></i>
                 <span><?php echo $edu['institution']; ?></span>
               </div>
-              <div class="flex items-center text-accent text-sm mt-2">
+              <div class="flex items-center text-primary text-sm mt-2">
                 <i class="fas fa-calendar-alt mr-2"></i>
                 <span><?php echo $edu['duration']; ?></span>
               </div>
@@ -370,16 +388,16 @@ $contact_info = [
 
       <!-- Professional Summary & Certifications -->
       <div class="md:w-1/2 md:pl-12">
-        <h3 class="text-2xl font-semibold mb-6 text-accent">Professional Summary</h3>
+        <h3 class="text-2xl font-semibold mb-6 text-primary">Professional Summary</h3>
         <p class="text-base leading-relaxed mb-10"><?php echo $personal_info['objective']; ?></p>
       </div>
     </div>
-    <h3 class="text-2xl font-semibold mb-6 text-accent px-6">Certifications</h3>
+    <h3 class="text-2xl font-semibold mb-6 text-primary px-6">Certifications</h3>
     <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 px-6">
   <?php foreach ($certifications as $cert): ?>
-    <div class="border-l-4 border-accent pl-4 bg-neutral">
+    <div class="border-l-4 border-primary pl-4 bg-neutral">
       <h4 class="font-semibold text-base"><?php echo $cert['title']; ?></h4>
-      <div class="flex flex-wrap items-center text-accent text-sm mt-1">
+      <div class="flex flex-wrap items-center text-primary text-sm mt-1">
         <span><?php echo $cert['issuer']; ?></span>
         <span class="mx-2">•</span>
         <span><?php echo $cert['date']; ?></span>
@@ -405,7 +423,7 @@ $contact_info = [
       <?php foreach ($experiences as $index => $exp): ?>
         <div class="bg-neutral p-6 rounded-lg shadow-md relative overflow-hidden">
           <?php if ($index === 0): ?>
-            <div class="absolute top-0 right-0 bg-accent text-base px-3 py-1 text-xs font-bold rounded-bl-lg shadow-md">
+            <div class="absolute top-0 right-0 bg-primary text-base px-3 py-1 text-xs font-bold rounded-bl-lg shadow-md">
               Latest
             </div>
           <?php endif; ?>
@@ -414,14 +432,14 @@ $contact_info = [
               <?php echo $exp['position']; ?>
               <i class="fas fa-chevron-down text-sm ml-2 transition-transform duration-300" id="arrow-<?php echo $index; ?>"></i>
             </h3>
-            <div class="flex flex-wrap items-center text-accent mt-1 text-sm">
+            <div class="flex flex-wrap items-center text-primary mt-1 text-sm">
               <i class="fas fa-building mr-2"></i>
               <span><?php echo $exp['company']; ?></span>
               <span class="mx-2">•</span>
               <i class="fas fa-map-marker-alt mr-2"></i>
               <span><?php echo $exp['location']; ?></span>
             </div>
-            <div class="flex items-center text-accent text-sm mt-2">
+            <div class="flex items-center text-primary text-sm mt-2">
               <i class="fas fa-calendar-alt mr-2"></i>
               <span><?php echo $exp['duration']; ?></span>
             </div>
@@ -482,7 +500,7 @@ function toggleExperience(index) {
       <?php foreach ($projects as $proj): ?>
       <div class="project-card bg-neutral p-6 rounded-xl shadow-md transition transform hover:-translate-y-1 hover:bg-accent">
         <h3 class="text-xl font-bold text-base mb-2"><?php echo $proj['title']; ?></h3>
-        <p class="text-sm text-accent mb-2"><?php echo $proj['duration']; ?></p>
+        <p class="text-sm text-primary mb-2"><?php echo $proj['duration']; ?></p>
         <p class="text-base mb-4"><?php echo $proj['description']; ?></p>
         <a href="<?php echo $proj['link']; ?>" target="_blank" class="bg-orange text-neutral px-4 py-2 rounded-lg inline-block mt-2 hover:bg-primary hover:text-neutral transition">View Project</a>
       </div>
